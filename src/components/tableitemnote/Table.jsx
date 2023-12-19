@@ -134,11 +134,20 @@ const DatatableItemnote = () => {
             },
           ]}
         />
-        <button onClick={handleFilter}>
-          <FilterAltIcon />
-          Filter
-        </button>
-        <button onClick={exportAsPDF}>PDF</button>
+        <div>
+          <button
+            onClick={handleFilter}
+            class="button"
+            style={{ marginBottom: "20px" }}
+          >
+            <FilterAltIcon />
+            Apply Filter
+          </button>
+
+          <button onClick={exportAsPDF} class="buttonDownload">
+            Download PDF
+          </button>
+        </div>
       </div>
       <TableContainer component={Paper}>
         <Table>
