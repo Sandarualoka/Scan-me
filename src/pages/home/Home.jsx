@@ -8,12 +8,15 @@ const Home = () => {
   return (
     <div className="home">
       <Sidebar />
+
       <div className="homeContainer">
         <div className="listContainer">
           <div className="listTitle">
             <h2 className="title-H">AVAILABLE PRODUCTS</h2>
           </div>
-          <Table />
+          <div style={{ marginLeft: "200px" }}>
+            <Table />
+          </div>
         </div>
       </div>
     </div>

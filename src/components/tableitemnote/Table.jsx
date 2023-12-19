@@ -102,7 +102,7 @@ const DatatableItemnote = () => {
   return (
     <div className="datatable">
       <div className="datatableTitle">
-        <p className="title-name">
+        <p className="title-name" style={{ marginLeft: "180px" }}>
           VIEW PRODUCT
           <br />
           NOTE
@@ -114,8 +114,6 @@ const DatatableItemnote = () => {
           value={qrCodeData}
           onChange={(e) => setQrCodeData(e.target.value)}
         />
-
-        {/* <button onClick={handleFind}>Find</button> */}
 
         <button className="button-Find">
           Find

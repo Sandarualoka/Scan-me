@@ -251,19 +251,20 @@ const Datatable = () => {
           onChange={(item) => setDateRange([item.selection])}
           ranges={dateRange}
         />
-        <button onClick={handleFilter} class="button">
+        <button
+          onClick={handleFilter}
+          class="button"
+          style={{ marginRight: "20px" }}
+        >
           <FilterAltIcon />
           Apply Filter
         </button>
-        {/* <button onClick={exportAsPDF} class="button">
-          PDF Downdload
-        </button> */}
 
         <button onClick={exportAsPDF} class="buttonDownload">
           Download PDF
         </button>
       </div>
-      <TableContainer component={Paper}>
+      <TableContainer component={Paper} style={{ marginLeft: "-90px" }}>
         <Table>
           <TableHead>
             <TableRow style={{ backgroundColor: "rgb(0, 9, 252)" }}>
