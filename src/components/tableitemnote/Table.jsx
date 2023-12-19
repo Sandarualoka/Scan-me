@@ -12,6 +12,7 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { jsPDF } from "jspdf";
 import "jspdf-autotable";
+import FilterAltIcon from "@mui/icons-material/FilterAlt";
 
 const DatatableItemnote = () => {
   const [qrCodeData, setQrCodeData] = useState("100.100.6SN6.R");
@@ -114,7 +115,14 @@ const DatatableItemnote = () => {
           onChange={(e) => setQrCodeData(e.target.value)}
         />
 
-        <button onClick={handleFind}>Find</button>
+        {/* <button onClick={handleFind}>Find</button> */}
+
+        <button className="button-Find">
+          Find
+          <div class="arrow-wrapper">
+            <div class="arrow"></div>
+          </div>
+        </button>
 
         <DateRangePicker
           onChange={(item) => setSelectedDate(item.selection.startDate)}
@@ -126,7 +134,10 @@ const DatatableItemnote = () => {
             },
           ]}
         />
-        <button onClick={handleFilter}>Filter</button>
+        <button onClick={handleFilter}>
+          <FilterAltIcon />
+          Filter
+        </button>
         <button onClick={exportAsPDF}>PDF</button>
       </div>
       <TableContainer component={Paper}>

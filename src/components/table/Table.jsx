@@ -12,6 +12,7 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { jsPDF } from "jspdf";
 import "jspdf-autotable";
+import FilterAltIcon from "@mui/icons-material/FilterAlt";
 
 const Datatable = () => {
   const [dateRange, setDateRange] = useState([
@@ -108,10 +109,15 @@ const Datatable = () => {
           ranges={dateRange}
         />
         <button onClick={handleFilter} class="button">
+          <FilterAltIcon />
           Apply Filter
         </button>
-        <button onClick={exportAsPDF} class="button">
+        {/* <button onClick={exportAsPDF} class="button">
           PDF Downdload
+        </button> */}
+
+        <button onClick={exportAsPDF} class="buttonDownload">
+          Download PDF
         </button>
       </div>
       <TableContainer component={Paper}>
