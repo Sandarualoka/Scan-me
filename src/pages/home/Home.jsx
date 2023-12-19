@@ -10,7 +10,9 @@ const Home = () => {
       <Sidebar />
       <div className="homeContainer">
         <div className="listContainer">
-          <div className="listTitle">Available Products</div>
+          <div className="listTitle">
+            <h2 className="title-H">AVAILABLE PRODUCTS</h2>
+          </div>
           <Table />
         </div>
       </div>

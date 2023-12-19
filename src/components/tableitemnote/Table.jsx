@@ -101,14 +101,21 @@ const DatatableItemnote = () => {
   return (
     <div className="datatable">
       <div className="datatableTitle">
-        View Product Note
+        <p className="title-name">
+          VIEW PRODUCT
+          <br />
+          NOTE
+        </p>
         <input
+          className="input-f"
           type="text"
           placeholder="QR Code Data"
           value={qrCodeData}
           onChange={(e) => setQrCodeData(e.target.value)}
         />
+
         <button onClick={handleFind}>Find</button>
+
         <DateRangePicker
           onChange={(item) => setSelectedDate(item.selection.startDate)}
           ranges={[

@@ -102,7 +102,7 @@ const Datatable = () => {
   return (
     <div className="datatable">
       <div className="datatableTitle">
-        View Products
+        <p className="title-name">VIEW PRODUCTS</p>
         <DateRangePicker
           onChange={(item) => setDateRange([item.selection])}
           ranges={dateRange}

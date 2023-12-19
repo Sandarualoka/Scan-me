@@ -10,7 +10,9 @@ const Homenote = () => {
       <Sidebar />
       <div className="homeContainer">
         <div className="listContainer">
-          <div className="listTitle">Products Note</div>
+          <div className="listTitle">
+            <h2 className="title-H">PRODUCTS NOTE</h2>
+          </div>
           <DatatableItemnote />
         </div>
       </div>
