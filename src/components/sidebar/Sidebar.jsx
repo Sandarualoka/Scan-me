@@ -65,6 +65,7 @@ import CropFreeIcon from "@mui/icons-material/CropFree";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import EventNoteIcon from "@mui/icons-material/EventNote";
+import Logo from "../../assets/Logo.png";
 
 const Sidebar = () => {
   const navigate = useNavigate();
@@ -130,6 +131,7 @@ const Sidebar = () => {
           </li>
         </ul>
       </div>
+      <img src={Logo} alt="logo" className="Logo-main" />
     </div>
   );
 };
